@@ -64,56 +64,32 @@ nav ul li:hover{
     transform: scale(1.2);
     color:var(--third-cholor);
 }
-main{
-    display: block;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-main h1{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--primary-cholor);
-    border-radius: 5px;
-    font-family: "Inter Tight", sans-serif;
-}
-
-footer{
-    display: flex;
-    background-color: var(--secondary-cholor);
-    padding: 2%;
-    justify-content: center;
-}
 
 #navigator {
-    display: flex;
     display: none;
     flex-direction: column;
     font-size: 1.5em;
     align-content: center; 
     text-align: center;  
-    color: var(--complementary-color);
+    color: var(--background);
 }
 
 
 #navigator.open{
-    display: flex;
+    display: block;
     font-size: 1.6rem;
+    padding: 0px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
 }
 
-.open a {
-	display: block;
-    color: var(--third-cholor);
-}
 
 #menu-btn {
     font-size: 2.5rem;
     border: 0;
     background: none;
-    color: var(--third-cholor);
+    color: var(--background);
     display: inline-block;
     bottom: 1px;
 }
@@ -132,4 +108,81 @@ footer{
     position: absolute;
     top: 1%;
     right: 1%;
+}
+main{
+    display: block;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primary-cholor);
+    border-radius: 5px;
+    font-family: "Inter Tight", sans-serif;
+}
+
+
+
+footer { 
+    background-color: var(--secondary-cholor);
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    width: 100%;
+    padding: 1.5%;
+    margin: 0;
+}
+
+.certificate{
+    display: inline;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.courses{
+    display: block;
+    place-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:violet;
+}
+.card-1{
+    display: block;
+    border: 2px solid rgb(146, 144, 144);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.button-1{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    border: solid 1px #8a5b4a;
+    border-radius: 10px;
+}
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.completed{
+    background-color: #260B01;
 }
