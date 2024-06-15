@@ -186,3 +186,8 @@ div{
 .completed{
     background-color: #260B01;
 }
+
+img{
+    display: flex;
+    max-width: 100%;
+}
