@@ -145,7 +145,6 @@ function coursesCard(filteredCourses) {
         courseSection.appendChild(courseCredits);
 
         courseSec.appendChild(courseSection);
-       
     });
 
 }
@@ -167,7 +166,7 @@ function displayTotalCredits(filteredCourses) {
         if (course.completed) {
             return total + course.credits
         } else {
-            return total; 
+            return total;
         }
     }, 0);
     const totalCreditsDiv = document.querySelector('.total-credits');
