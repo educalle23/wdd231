@@ -1,66 +1,65 @@
 [
-    {
-      "name": "Alpha Technologies",
-      "address": "1234 Innovation Way, Tech City, TC 12345",
-      "phone": "123-456-7890",
-      "website": "http://www.alpha-tech.com",
-      "image": "alpha.png",
-      "membership_level": 3,
-      "description": "Leading provider of innovative tech solutions."
-    },
-    {
-      "name": "Beta Corp",
-      "address": "5678 Enterprise Ave, Business Town, BT 67890",
-      "phone": "987-654-3210",
-      "website": "http://www.beta-corp.com",
-      "image": "beta.png",
-      "membership_level": 2,
-      "description": "Experts in business management and consulting."
-    },
-    {
-      "name": "Gamma Industries",
-      "address": "9101 Manufacturing Blvd, Industrial City, IC 10112",
-      "phone": "555-555-5555",
-      "website": "http://www.gamma-industries.com",
-      "image": "gamma.png",
-      "membership_level": 1,
-      "description": "Manufacturers of high-quality industrial goods."
-    },
-    {
-      "name": "Delta Solutions",
-      "address": "3141 Integration St, Solutions City, SC 31415",
-      "phone": "111-222-3333",
-      "website": "http://www.delta-solutions.com",
-      "image": "delta.png",
-      "membership_level": 3,
-      "description": "Innovative solutions for complex problems."
-    },
-    {
-      "name": "Epsilon Services",
-      "address": "1592 Consulting Ave, Service City, SC 15926",
-      "phone": "222-333-4444",
-      "website": "http://www.epsilon-services.com",
-      "image": "epsilon.png",
-      "membership_level": 2,
-      "description": "Comprehensive consulting and support services."
-    },
-    {
-      "name": "Zeta Enterprises",
-      "address": "2653 Innovation Rd, Startup City, SC 26535",
-      "phone": "333-444-5555",
-      "website": "http://www.zeta-enterprises.com",
-      "image": "zeta.png",
-      "membership_level": 1,
-      "description": "Pioneering new startups in tech and innovation."
-    },
-    {
-      "name": "Eta Dynamics",
-      "address": "1789 Dynamic Blvd, Energy City, EC 17890",
-      "phone": "444-555-6666",
-      "website": "http://www.eta-dynamics.com",
-      "image": "eta.png",
-      "membership_level": 3,
-      "description": "Leading in renewable energy solutions."
-    }
-  ]
-  
+  {
+    "name": "Alpha Technologies",
+    "address": "1234 Innovation Way, Tech City, TC 12345",
+    "phone": "123-456-7890",
+    "website": "http://www.alpha-tech.com",
+    "image": "alpha.jpg",
+    "membership_level": 3,
+    "description": "Leading provider of innovative tech solutions."
+  },
+  {
+    "name": "Beta Corp",
+    "address": "5678 Enterprise Ave, Business Town, BT 67890",
+    "phone": "987-654-3210",
+    "website": "http://www.beta-corp.com",
+    "image": "beta.jpg",
+    "membership_level": 2,
+    "description": "Experts in business management and consulting."
+  },
+  {
+    "name": "Gamma Industries",
+    "address": "9101 Manufacturing Blvd, Industrial City, IC 10112",
+    "phone": "555-555-5555",
+    "website": "http://www.gamma-industries.com",
+    "image": "gamma.jpg",
+    "membership_level": 1,
+    "description": "Manufacturers of high-quality industrial goods."
+  },
+  {
+    "name": "Rumiñahui",
+    "address": "3141 Integration St, Solutions City, SC 31415",
+    "phone": "111-222-3333",
+    "website": "http://www.delta-solutions.com",
+    "image": "rumiñahui.jpeg",
+    "membership_level": 3,
+    "description": "the best pizzas in the city"
+  },
+  {
+    "name": "Epilson Services",
+    "address": "1592 Consulting Ave, Service City, SC 15926",
+    "phone": "222-333-4444",
+    "website": "http://www.epsilon-services.com",
+    "image": "epilson.jpg",
+    "membership_level": 2,
+    "description": "white line maintenance"
+  },
+  {
+    "name": "Zeta Enterprises",
+    "address": "2653 Innovation Rd, Startup City, SC 26535",
+    "phone": "333-444-5555",
+    "website": "http://www.zeta-enterprises.com",
+    "image": "zeta.jpg",
+    "membership_level": 1,
+    "description": "Pioneering new startups in tech and innovation."
+  },
+  {
+    "name": "Eta Dynamics",
+    "address": "1789 Dynamic Blvd, Energy City, EC 17890",
+    "phone": "444-555-6666",
+    "website": "http://www.eta-dynamics.com",
+    "image": "eta.jpg",
+    "membership_level": 3,
+    "description": "Leading in renewable energy solutions."
+  }
+]
