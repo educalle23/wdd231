@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Lau Eduardo Calle Urbina">
+    <meta name="Description" content="The main page from the Chamber of commerce">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/chamber-image.jpg">
+    <meta property="og:url" content="#">
+    <link rel="stylesheet" href="styles/index.css">
+    <script defer src="./scripts/index.js"></script>
+    <title>Trujillo's Chamber of commerce</title>
+</head>
+<body>
+    <header>
+        <img src="images/icon.png" alt="Chamber logo">
+        <h1>Trujillo Chamber of commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero.jpeg" alt="headquarters of the chamber of commerce of trujillo">
+            <p>Expand your network of contacts, meet your future partners.</p>
+            <button class="cta">Join us</button>
+        </div>
+        
+        <div class="events">
+            <h1>EVENTS</h1>
+            <div class="card">
+                <h2>Business Networking Breakfast</h2>
+                <p>Join us for a morning of networking with local business leaders. Expand your connections and share ideas over a delicious breakfast.</p>
+                <p><strong>Date:</strong> July 20, 2024</p>
+                <p><strong>Time:</strong> 8:00 AM - 10:00 AM</p>
+            </div>
+            <div class="card">
+                <h2>Economic Outlook Seminar</h2>
+                <p>Hear from experts about the latest economic trends and forecasts. Gain insights to help you plan your business strategy.</p>
+                <p><strong>Date:</strong> August 15, 2024</p>
+                <p><strong>Time:</strong> 1:00 PM - 3:00 PM</p>
+            </div>
+            <div class="card">
+                <h2>Small Business Expo</h2>
+                <p>Showcase your products and services at our annual Small Business Expo. Meet potential customers and partners.</p>
+                <p><strong>Date:</strong> September 10, 2024</p>
+                <p><strong>Time:</strong> 10:00 AM - 4:00 PM</p>
+            </div>
+            <div class="card">
+                <h2>Leadership Development Workshop</h2>
+                <p>Enhance your leadership skills with our interactive workshop. Learn from experienced leaders and improve your management abilities.</p>
+                <p><strong>Date:</strong> October 5, 2024</p>
+                <p><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
+            </div>
+            <div class="card">
+                <h2>Holiday Charity Gala</h2>
+                <p>Celebrate the season and give back to the community at our Holiday Charity Gala. Enjoy an evening of entertainment and networking.</p>
+                <p><strong>Date:</strong> December 12, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="weather">
+            <h2>Current Weather</h2>
+            <section id="weather-data"></section>
+        </div>
+        <div class="spotlights">
+            <h2>Company Spotlights</h2>
+            <section id="spotlight-companies"></section>
+        </div>
+    </main>
+    <footer> 
+        <p> © <span id="currentyear"></span> Eduardo Calle - Trujillo, Peru 🏖️</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
