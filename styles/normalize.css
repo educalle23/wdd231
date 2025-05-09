@@ -1,0 +1,25 @@
+body{
+    margin: 20px;
+}
+
+#nav-button::before{
+    content: "☰";
+}
+
+#nav-button.open::before{
+    content: "X";
+}
+
+.navigator{
+    display: none;
+}
+
+.navigator.open{
+    display: inline-flex;
+    
+}
+
+.navigator ul li{
+    align-items: center;
+}
+

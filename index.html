@@ -12,6 +12,7 @@
     <meta name="author" content="Eduardo Calle" />
 
     <link rel="stylesheet" type="text/css" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/normalize.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,13 +21,17 @@
       rel="stylesheet"
     />
 
-    <script defer src="./scripts/getdates.js"></script>
+    <script defer src="./scripts/date.js"></script>
+    <script defer src="./scripts/course.js"></script>
+    <script defer src="./scripts/navigation.js"></script>
+
   </head>
   <body>
     <header>
         <img src="" alt="My profile picture">
         <h1>Eduardo Calle</h1>
-        <nav>
+        <button id="nav-button"></button>
+        <nav class="navigator">
             <ul>
                 <li>Home</li>
                 <li>chamber</li>
@@ -45,7 +50,7 @@
     <footer>
         
     </footer>
-        <p>©<span id="currentYear"></span> Edurado Calle - Trujillo Peru</p>
-        <p id="lastModified"></p>
+        <p><span id="currentYear"></span> Edurado Calle - Trujillo Peru</p>
+        <span id="lastModified"></span>
   </body>
 </html>
