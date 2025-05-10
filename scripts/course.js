@@ -118,6 +118,7 @@ function filter(subject){
         card.innerHTML += `<h3>${courseTitle}</h3>`
         container.appendChild(card);
         total += element.credits;
+        credits.textContent = `Total de créditos: ${total}`;
 
     });
 }
