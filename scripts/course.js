@@ -77,3 +77,49 @@ const courses = [
         completed: false
     }
 ]
+
+const courseDiv = document.querySelector(".course");
+const buttons = document.querySelector(".filter-buttons");
+const container = document.querySelector(".cards-container");
+const credits = document.querySelector(".total-credits");
+
+const especificSubject = [...new Set(courses.map(s =>s.subject))];
+const allSubjects = ['all', ...especificSubject];
+
+
+allSubjects.forEach(subject => {
+    const btn = document.createElement("button");
+    btn.textContent = subject.toUpperCase();
+    btn.onclick = () => filter(subject);
+    buttons.appendChild(btn);
+});
+
+
+function filter(subject){
+    container.innerHTML = "";
+    let total = 0
+
+    let filtered;
+        if (subject === 'all') {
+        filtered = courses;
+        } else {
+        filtered = courses.filter(element => element.subject === subject);
+        }
+
+    filtered.forEach(element => {
+        const card = document.createElement("div");
+        card.className = "cards";
+        let courseTitle = `${element.subject} ${element.number}`
+
+        if (element.completed) {
+            card.classList.add("completed");
+        }
+
+        card.innerHTML += `<h3>${courseTitle}</h3>`
+        container.appendChild(card);
+        total += element.credits;
+
+    });
+}
+
+filter("all");
