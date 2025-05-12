@@ -49,7 +49,7 @@ h1{
 }
 
 .navigator.open{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     padding: 0%;
@@ -59,7 +59,7 @@ h1{
 .navigator ul{
     padding: 0%;
 }
-.navigator ul a{
+.navigator  a{
     align-items: center;
     display: flex;
     list-style-type: none;
