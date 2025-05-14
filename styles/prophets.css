@@ -1,0 +1,36 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgba(116, 153, 116, 0.521);
+}
+
+
+h1 {
+    size: 2rem;
+    color: rgb(13, 61, 45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border: solid 1px rgb(184, 168, 147);
+    border-radius: 20px;
+    margin: 0.5rem;
+
+}
+
+img{
+    padding-bottom: 0.5rem;
+}
