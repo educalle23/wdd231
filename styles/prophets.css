@@ -28,7 +28,7 @@ h1 {
     border: solid 1px rgb(184, 168, 147);
     border-radius: 20px;
     margin: 0.5rem;
-
+    box-shadow: 5px 5px 15px rgba(167, 168, 101, 0.562); 
 }
 
 img{
