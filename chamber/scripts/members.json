@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Manos de Seda",
+        "address": "Av. Colon 542, Trujillo, Peru",
+        "phone": "+51 944 123 467",
+        "website": "https://manosdeseda.com",
+        "image": "manos_de_seda_logo.png",
+        "membership_level": 3,
+        "description": "Leader in advanced technological solutions for businesses.",
+        "services": ["Software development", "IT consulting", "Technical support"]
+    },
+    {
+        "name": "El Dino",
+        "address": "America Av. 456, Trujillo, Peru",
+        "phone": "+51 914 987 654",
+        "website": "https://xyzcommercial.com",
+        "image": "dino.jpg",
+        "membership_level": 2,
+        "description": "A tranquil oasis offering professional massage therapy for relaxation and wellness.",
+        "services": ["Relaxation Massage", "Deep Tissue Massage", "Hot Stone Massage"]
+    },
+    {
+        "name": "El Sombrero",
+        "address": "España Av. 511, Trujillo, Peru",
+        "phone": "+51 934 456 780",
+        "website": "https://deliciastrujillo.com",
+        "image": "el-sombrero.jpg",
+        "membership_level": 1,
+        "description": "Specialists in regional cuisine using the finest ingredients.",
+        "services": ["Restaurant", "Private events", "Corporate catering"]
+    },
+    {
+        "name": "Constructora Trujillo",
+        "address": "Av. Oro 428, Trujillo, Peru",
+        "phone": "+51 44 369 8521",
+        "website": "https://lalibertadrealty.com",
+        "image": "constructora.png",
+        "membership_level": 3,
+        "description": "Experts in real estate and investment consulting.",
+        "services": ["Buying & selling properties", "Rentals", "Legal advisory"]
+    },
+    {
+        "name": "Servicio Electronico Trujillo",
+        "address": "Jr. Independencia 654, Trujillo, Peru",
+        "phone": "+51 44 753 9516",
+        "website": "https://electrohome.com",
+        "image": "servicio-electronico.png",
+        "membership_level": 2,
+        "description": "Home appliances and technology at the best prices.",
+        "services": ["Appliance sales", "Extended warranty", "Customer service"]
+    },
+    {
+        "name": "Mariel Contadores",
+        "address": "Calle Los Laureles 852, Trujillo, Peru",
+        "phone": "+51 44 159 7532",
+        "website": "https://trujilloaccounting.com",
+        "image": "mariel-contadores.png",
+        "membership_level": 1,
+        "description": "Accounting and tax advisory for businesses and entrepreneurs.",
+        "services": ["Accounting", "Tax planning", "Financial audits"]
+    },
+    {
+        "name": "Cruz del Norte",
+        "address": "Jr. Bolívar 951, Trujillo, Peru",
+        "phone": "+51 44 852 3697",
+        "website": "https://rutanortetravel.com",
+        "image": "cruz-del-norte.jpg",
+        "membership_level": 2,
+        "description": "Tourism and unique experiences in northern Peru.",
+        "services": ["Guided tours", "Travel packages", "Travel advisory"]
+    }
+]
