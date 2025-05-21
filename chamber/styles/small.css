@@ -61,7 +61,6 @@ header h1{
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
-    /* background-color: aquamarine; */
 }
 #nav-button::before{
     content: "☰";
@@ -106,6 +105,46 @@ header h1{
     text-decoration: none;
 }
 
+main{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* flex-direction:column; */
+}
+#filters{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnGrid, #btnList{
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #E1B12C, #C99B2D);
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px 1px #B07C3E;
+    margin-bottom: 0.5rem;
+}
+.item p{
+    display: flex;
+    margin: 0.2rem;
+}
+
+.item img{
+    max-width: 50%;
+    height: auto;
+}
 
 footer{
     margin: 0;
