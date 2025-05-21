@@ -6,8 +6,9 @@
         "website": "https://manosdeseda.com",
         "image": "manos_de_seda_logo.png",
         "membership_level": 3,
-        "description": "Leader in advanced technological solutions for businesses.",
-        "services": ["Software development", "IT consulting", "Technical support"]
+        "description": "A tranquil oasis offering professional massage therapy for relaxation and wellness.",
+        "services": ["Software development", "IT consulting", "Technical support"],
+        "id" : 3448
     },
     {
         "name": "El Dino",
@@ -16,8 +17,9 @@
         "website": "https://xyzcommercial.com",
         "image": "dino.jpg",
         "membership_level": 2,
-        "description": "A tranquil oasis offering professional massage therapy for relaxation and wellness.",
-        "services": ["Relaxation Massage", "Deep Tissue Massage", "Hot Stone Massage"]
+        "description": "Leader in advanced technological solutions for businesses.",
+        "services": ["Relaxation Massage", "Deep Tissue Massage", "Hot Stone Massage"],
+        "id" : 3878
     },
     {
         "name": "El Sombrero",
@@ -27,7 +29,8 @@
         "image": "el-sombrero.jpg",
         "membership_level": 1,
         "description": "Specialists in regional cuisine using the finest ingredients.",
-        "services": ["Restaurant", "Private events", "Corporate catering"]
+        "services": ["Restaurant", "Private events", "Corporate catering"],
+        "id" : 4021
     },
     {
         "name": "Constructora Trujillo",
@@ -37,7 +40,8 @@
         "image": "constructora.png",
         "membership_level": 3,
         "description": "Experts in real estate and investment consulting.",
-        "services": ["Buying & selling properties", "Rentals", "Legal advisory"]
+        "services": ["Buying & selling properties", "Rentals", "Legal advisory"],
+        "id" : 2114
     },
     {
         "name": "Servicio Electronico Trujillo",
@@ -47,7 +51,8 @@
         "image": "servicio-electronico.png",
         "membership_level": 2,
         "description": "Home appliances and technology at the best prices.",
-        "services": ["Appliance sales", "Extended warranty", "Customer service"]
+        "services": ["Appliance sales", "Extended warranty", "Customer service"],
+        "id" : 2845
     },
     {
         "name": "Mariel Contadores",
@@ -57,7 +62,8 @@
         "image": "mariel-contadores.png",
         "membership_level": 1,
         "description": "Accounting and tax advisory for businesses and entrepreneurs.",
-        "services": ["Accounting", "Tax planning", "Financial audits"]
+        "services": ["Accounting", "Tax planning", "Financial audits"],
+        "id" : 7812
     },
     {
         "name": "Cruz del Norte",
@@ -67,6 +73,7 @@
         "image": "cruz-del-norte.jpg",
         "membership_level": 2,
         "description": "Tourism and unique experiences in northern Peru.",
-        "services": ["Guided tours", "Travel packages", "Travel advisory"]
+        "services": ["Guided tours", "Travel packages", "Travel advisory"],
+        "id" : 6224
     }
 ]
