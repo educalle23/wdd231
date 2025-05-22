@@ -61,3 +61,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     btnGrid.addEventListener("click", renderGrid);
     btnList.addEventListener("click", renderList);
 });
+
+const year = new Date();
+
+let fullYear = document.getElementById('current-year');
+let currentYear = year.getFullYear();
+
+let lastModified = document.getElementById('last-modified');
+let lastModifiedDate = document.lastModified;
+
+fullYear.innerHTML = `© ${currentYear}`;
+lastModified.innerHTML = `Last Modified: ${lastModifiedDate}`;

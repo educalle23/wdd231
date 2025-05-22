@@ -1,0 +1,70 @@
+@media screen and (min-width: 650px) {
+    #page-info{
+        display: flex;
+        justify-content: center;
+    }
+    #page-info h1{
+        margin: 0%;
+        font-size: 2rem;
+        margin: 2rem;
+    }
+    #page-info img {
+        max-width: 10%;
+        height: auto;
+
+    }
+    #nav-button{
+        display: none;
+    }
+    .navigator{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1rem;
+        size: 10rem;
+    }
+    #btnGrid, #btnList{
+        margin: 1rem;
+        size: 10rem;
+        font-size: 1.5rem
+    }
+    .grid-view{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+    }
+
+    .grid-view .item{
+        display: flex;
+        height: 330px;
+        margin: 0.5rem;
+    }
+    .item img{
+        max-width: auto;
+        max-height: 200px;
+    }
+    .item a{
+        text-decoration: underline;
+        color: blue    
+    }
+
+    .item a:hover{
+    text-decoration: underline;
+    color: blue       
+    }
+    .list-view {
+        display: block;
+    }
+    .list-view .item{
+        display: grid;
+        grid-template-columns: 25% 25% 15% 25%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer{
+        display: flex;
+    }
+}
