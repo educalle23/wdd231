@@ -21,11 +21,9 @@
         align-items: center;
         justify-content: space-evenly;
         margin: 1rem;
-        size: 10rem;
     }
     #btnGrid, #btnList{
         margin: 1rem;
-        size: 10rem;
         font-size: 1.5rem
     }
     .grid-view{
@@ -41,7 +39,6 @@
         margin: 0.5rem;
     }
     .item img{
-        max-width: auto;
         max-height: 200px;
     }
     .item a{
