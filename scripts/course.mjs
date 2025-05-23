@@ -4,7 +4,7 @@ const byuiCourse = {
   sections: [
     {
       sectionNumber: 1,
-      enrolled: 88,
+      enrolled: 1,
       instructor: "Brother Bingham",
     },
     {
