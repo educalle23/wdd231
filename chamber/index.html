@@ -8,10 +8,10 @@
       content="This is the directory for the Chamber members"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Directory - Trujillo Chamber of Commerce</title>
+    <title>Trujillo Chamber of Commerce</title>
 
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/index-small.css" />
+    <link rel="stylesheet" href="styles/index-large.css">
     <script defer src="scripts/directory.js"></script>
     <link rel="icon" href="images/icon.ico" />
     <meta property="og:title" content="Trujillo Chamber of Commerce" />
@@ -43,17 +43,25 @@
       </div>
       <nav class="navigator">
         <a href="index.html">Home</a>
-        <a href="#">Directory</a>
+        <a href="directory.html">Directory</a>
         <a href="">Discover</a>
         <a href="">Join</a>
       </nav>
     </header>
     <main>
-      <div id="filters">
-        <button id="btnGrid"><ion-icon name="grid-outline"></ion-icon></button>
-        <button id="btnList"><ion-icon name="list-outline"></ion-icon></button>
-      </div>
-      <div id="container"></div>
+        <section class="hero">
+             <picture>
+                <source srcset="images/hero-try.jpg" media="(min-width: 800px)">
+                <source srcset="images/hero-small.jpg" media="(min-width: 500px)">
+                <img src="images/hero-small.jpg" alt="Chamber of commerce">
+            </picture>
+            <div class="hero-content">
+                <h1 class="cta-title">Opportunities are waiting for You</h1>
+                <p class="cta-message">Impulsa tu negocio con conexiones estratégicas y oportunidades exclusivas.</p>
+                <a href="join.html" class="cta-button">JOIN NOW</a>
+            </div>
+        </section>
+
     </main>
     <footer>
       <div id="chamber-info">
