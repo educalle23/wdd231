@@ -77,5 +77,27 @@ function displayResultsForecast(data) {
     weatherIcon.setAttribute("alt", data.weather[0].description);
 }
 
+const cards = document.querySelector("#container-cards"); 
+
+
+async function renderGrid() {
+        const data = await fetchData();
+        container.innerHTML = "";
+        container.className = "grid-view";
+        data.forEach(item => {
+            const card = document.createElement("div");
+            card.classList.add("item");
+            card.innerHTML = `
+                <img src="images/${item.image}" alt="${item.name}">
+
+                <p>${item.address}</p>
+                <p>${item.phone}</p>
+                <p>ID: ${item.id}</p>
+                <a>${item.website}</a>
+            `;
+            container.appendChild(cards);
+        });
+    }
+
 
 apiFetch();
