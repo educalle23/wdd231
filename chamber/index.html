@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="styles/index-small.css" />
     <link rel="stylesheet" href="styles/index-large.css">
-    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/index.js"></script>
     <link rel="icon" href="images/icon.ico" />
     <meta property="og:title" content="Trujillo Chamber of Commerce" />
     <meta
@@ -50,7 +50,7 @@
     </header>
     <main>
         <section class="hero">
-             <picture>
+            <picture>
                 <source srcset="images/hero-try.jpg" media="(min-width: 800px)">
                 <source srcset="images/hero-small.jpg" media="(min-width: 500px)">
                 <img src="images/hero-small.jpg" alt="Chamber of commerce">
@@ -61,7 +61,33 @@
                 <a href="join.html" class="cta-button">JOIN NOW</a>
             </div>
         </section>
+        <h1>HOME</h1>
+        <section class="events">
+          <h1>EVENTS</h1>
+          <div class="events-cards">
+            <h2>Trujillo Business Expo 2025</h2>
+            <p>Date: June 15, 2025</p>
+          </div>
+          <div class="events-cards">
+            <h2>Green Commerce Forum: Sustainable Business Practices</h2>
+            <p>Date: August 5, 2025</p>
+          </div>
+          <div class="events-cards">
+            <h2>Tech & Innovation Summit: The Future of Business</h2>
+            <p>Date: September 10, 2025</p>
+          </div>
+        </section>
+        <section class="current-weather">
+          <h1>Current Weather</h1>
+          <img id="img-current"></img>
+          <span id="info-current"></span>
 
+        </section>
+        <section class="weather-forecast">
+          <h1>Weather Forecast</h1>
+          <span id="weather-forecast"></span>
+        </section>
+        <section class="cards"></section>
     </main>
     <footer>
       <div id="chamber-info">
@@ -84,6 +110,6 @@
       </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

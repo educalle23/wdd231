@@ -67,6 +67,20 @@
     color: white;
     }
 
+    .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para mejorar legibilidad */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+    .cta-message{
+    display: flex;
+}
     picture img {
         max-height: 80vh; 
         object-fit: cover;
