@@ -116,7 +116,7 @@ main{
 
 .hero {
     height: 100vh; /* Toda la pantalla */
-    background-image: url('images/hero-small.jpg');
+    /* background-image: url('images/hero-small.jpg'); */
     background-size: cover; /* La imagen cubre toda la sección */
     background-position: center;
     background-repeat: no-repeat;
