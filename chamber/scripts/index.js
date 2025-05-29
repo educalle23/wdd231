@@ -7,36 +7,16 @@ const divCurrent = document.querySelector('.current-weather');
 const temp = document.getElementById("info-current");
 const weatherIcon = document.querySelector('#img-current');
 const captionDesc = document.createElement('p');
-const infoForecast = document.createElement('div');
-infoForecast.classList.add('info-forecast');
+
+//Forecast
+const infoForecast = document.querySelector('.info-forecast');
+console.log(infoForecast);
+
 
 const urlCurrent = 'https://api.openweathermap.org/data/2.5/weather?lat=-8.11557&lon=-79.0&units=metric&appid=c2454891036de5dbd628eee0a593638f';
-// const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast/daily?lat=-8.11557&lon=-79.0&units=metric&appid=c2454891036de5dbd628eee0a593638f';
-const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=-23.55&lon=-51.44&appid=c2454891036de5dbd628eee0a593638f`;
+const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=-8.11557&lon=-79.0&units=metric&appid=c2454891036de5dbd628eee0a593638f`;
 
-// async function apiFetch() {
-//     try {
-//         const [responseCurrent] = await Promise.all([
-//             fetch(urlCurrent)
-//         ]);
-//         if (responseCurrent.ok) {
-//             console.log("API call successful");
-//             const dataCurrent =  await responseCurrent.json();
-//             // const dataForecast = await responseForecast.json();
-//             console.log(dataCurrent);
-//             // console.log(dataForecast);
-//             displayResultsCurrent(dataCurrent);
-//             // displayResultsForecast(data);
-//         } else{
-//             throw Error(await responseCurrent.text());
-//         }
-//     } catch (error) {
-//         console.log(error);
-//     }
-    
-// }
 
-// 🔄 FUNCIÓN PARA OBTENER DATOS DE LA API
 async function apiFetch() {
     try {
         const [responseCurrent, responseForecast] = await Promise.all([
@@ -85,10 +65,30 @@ function displayResultsCurrent(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", data.weather[0].description);
-    divCurrent.append(temp, weatherIcon);
+    divCurrent.append(weatherIcon, temp);
 }
 
+function displayResultsForecast(data) {
+    const today = new Date();
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+    //Get the 3 days after today
+    const weekDay = days[today.getDay()];
+    const dayAfter1 = days[(today.getDay() + 1) % 7];
+    const dayAfter2 = days[(today.getDay() + 2) % 7];
+    const dayAfter3 = days[(today.getDay() + 3) % 7];
 
+    //Get the temp of the three next days
+    const tempDayAfter1 = data.list[0].main.temp
+    const tempDayAfter2 = data.list[8].main.temp
+    const tempDayAfter3 = data.list[16].main.temp
+
+    infoForecast.innerHTML = `
+    <strong>${dayAfter1}: </strong> ${tempDayAfter1} <br>
+    <strong>${dayAfter2}: </strong> ${tempDayAfter2} <br>
+    <strong>${dayAfter3}: </strong> ${tempDayAfter3} 
+    `
+}
 
 apiFetch();
 
