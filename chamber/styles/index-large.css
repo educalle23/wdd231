@@ -35,7 +35,6 @@
 
     .hero{
         position:relative;
-        /* background-color: aqua; */
         height: 25rem;
         background-image: url('/chamber/images/hero-large.jpg');
         background-size: cover; 
@@ -120,11 +119,11 @@
     .container-cards {
     display: grid;
     grid-template-rows: 25rem;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px; /* Espaciado entre tarjetas */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     }
 
-    /* Estilizar cada tarjeta */
+
     .card {
         padding: 10px;
         margin: 20px;
