@@ -33,6 +33,26 @@
     align-items: center;
     }
 
+    .hero{
+        position:relative;
+        /* background-color: aqua; */
+        height: 25rem;
+        background-image: url('/chamber/images/hero-large.jpg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        }
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para mejorar legibilidad */
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 600px;
+    }
+
     .grid-view .item{
         display: flex;
         height: 330px;
@@ -61,22 +81,7 @@
         align-items: center;
     }
     
-    .hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    }
-
-    .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35%);
-    background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para mejorar legibilidad */
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 600px;
-}
+    
 
     .cta-message{
     display: flex;
@@ -86,7 +91,52 @@
         object-fit: cover;
     }
 
+    .index-info{
+        display: grid;
+        grid-template-rows: 28rem;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .events{
+        grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .current-weather{
+        grid-area: 1 / 5 / 2 / 6;
+    }
+    .current-weather{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .weather-forecast{
+            grid-area: 1 / 6 / 2 / 7;
+        }
+
+    .card img{
+        height: 10rem;
+    } 
+    .container-cards {
+    display: grid;
+    grid-template-rows: 25rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    }
+
+    /* Estilizar cada tarjeta */
+    .card {
+        padding: 10px;
+        margin: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    
+
     footer{
         display: flex;
     }
+
 }
