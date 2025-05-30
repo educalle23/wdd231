@@ -108,7 +108,7 @@ main{
 position:relative;
 /* background-color: aqua; */
 height: 25rem;
-background-image: url('chamber/images/hero-small.jpg');
+background-image: url('https://github.com/educalle23/wdd231/blob/main/chamber/images/hero-small.jpg?raw=true');
 background-size: cover; 
 background-position: center;
 background-repeat: no-repeat; 
