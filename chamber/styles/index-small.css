@@ -85,6 +85,7 @@ header h1{
 .navigator ul{
     padding: 0%;
 }
+
 .navigator  a{
     align-items: center;
     display: flex;
@@ -93,8 +94,7 @@ header h1{
     font-size: 1.3rem;
     padding: 0.3rem;
     cursor: pointer;
-    color: #261909
-    font-weight: bold;
+    color: #261909;
     text-decoration: none;
 }
 
