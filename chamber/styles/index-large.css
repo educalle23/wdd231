@@ -110,8 +110,16 @@
 
 
     .weather-forecast{
-            grid-area: 1 / 6 / 2 / 7;
-        }
+        grid-area: 1 / 6 / 2 / 7;
+    }
+
+    .info-forecast{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8rem;
+    }
 
     .card img{
         height: 10rem;

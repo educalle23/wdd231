@@ -79,7 +79,7 @@ function displayResultsForecast(data) {
     const tempDayAfter3 = data.list[16].main.temp
 
     infoForecast.innerHTML = `
-    <p></p><strong>${dayAfter1}: </strong> ${tempDayAfter1}C°</p>
+    <p><strong>${dayAfter1}: </strong> ${tempDayAfter1}C°</p>
     <p><strong>${dayAfter2}: </strong> ${tempDayAfter2}C°</p>
     <p><strong>${dayAfter3}: </strong> ${tempDayAfter3}C°</p> 
     `
