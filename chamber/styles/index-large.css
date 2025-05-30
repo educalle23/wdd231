@@ -36,7 +36,7 @@
     .hero{
         position:relative;
         height: 25rem;
-        background-image: url('/chamber/images/hero-large.jpg');
+        background-image: url('https://github.com/educalle23/wdd231/blob/main/chamber/images/hero-large.jpg');
         background-size: cover; 
         background-position: center;
         background-repeat: no-repeat; 
