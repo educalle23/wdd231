@@ -110,7 +110,7 @@ async function displaySpotlights() {
         const card = document.createElement('div');
         card.classList.add('card');
         card.innerHTML = `
-            <h3>${member.name}</h3>
+            <h1>${member.name}</h1>
             <img src="images/${member.image}" alt="Logo de ${member.name}">
             <p>PHONE: ${member.phone}</p>
             <p>DIRECTION ${member.address}</p>
@@ -121,7 +121,7 @@ async function displaySpotlights() {
     });
 }
 
-const button = document.getElementById("nav-button");
+const button = document.getElementById("navigation-button");
 const menu = document.querySelector(".navigator");
 
 

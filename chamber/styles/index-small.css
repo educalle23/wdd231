@@ -27,7 +27,7 @@ header{
 }
 
 header h1{
-    color: #C99B2D;
+    color: #333609;
     padding-bottom: 0%;
     margin-bottom: 0;
     font-family: 'Playfair Display', serif;}
@@ -48,7 +48,7 @@ header h1{
 }
 
 
-#nav-button{
+#navigation-button{
     display: flex;
     position: relative;
     align-content: end;
@@ -61,12 +61,12 @@ header h1{
     font-size: 16px;
     cursor: pointer;
 }
-#nav-button::before{
+#navigation-button::before{
     content: "☰";
     position: relative;
 }
 
-#nav-button.open::before{
+#navigation-button.open::before{
     content: "X";
 }
 
@@ -93,7 +93,7 @@ header h1{
     font-size: 1.3rem;
     padding: 0.3rem;
     cursor: pointer;
-    color: #B07C3E;
+    color: #261909
     font-weight: bold;
     text-decoration: none;
 }
@@ -136,7 +136,7 @@ h1{
 .cta-button {
     display: inline-block;
     width: fit-content;
-    background: #ff9800;
+    background: #261909;
     color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -197,7 +197,7 @@ picture img {
     align-items: center;
     justify-content: center;
     background-color: #405d6eab;
-    color: #f3f0e9;
+    color: #ffffff;
 }
 
 .events-cards {
