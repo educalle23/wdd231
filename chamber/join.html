@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Lau Calle" />
+    <meta
+      name="description"
+      content="This is the directory for the Chamber members"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trujillo Chamber of Commerce</title>
+
+    <link rel="stylesheet" href="styles/join-large.css" />
+    <link rel="stylesheet" href="styles/join-small.css" />
+    <script defer src="scripts/join.js"></script>
+    <link rel="icon" href="images/icon.ico" />
+    <meta property="og:title" content="Trujillo Chamber of Commerce" />
+    <meta
+      property="og:description"
+      content="We empower local businesses and entrepreneurs to grow. Join our business community and gain access to exclusive benefits, guidance, events, and networking opportunities."
+    />
+    <meta
+      property="og:url"
+      content="https://educalle23.github.io/wdd231/chamber/directory"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://www.skyairline.com/blog/wp-content/uploads/2024/10/trujillo-peru-sky-airline.jpeg"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Trujillo Chamber of Commerce" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <div id="page-info">
+            <img src="images/logo.jpg" alt="" class="chamber-logo" />
+            <h1>Trujillo Chamber of Commerce</h1>
+            <button id="navigation-button"></button>
+        </div>
+        <nav class="navigator">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="">Discover</a>
+            <a href="">Join</a>
+        </nav>
+    </header>
+    <main>
+        <h1>JOIN</h1>
+        <div class="form">
+            <form method="get" action="thanks.html">
+            <label for="first-name">First Name:</label>
+            <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            required
+            autocomplete="given-name"
+            />
+            <label for="last-name">Last Name:</label>
+            <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            required
+            autocomplete="family-name"
+            />
+            <label for="organanizational-t">Organizational Title:</label>
+            <input
+            type="text"
+            name="organanizational-t"
+            id="organanizational-t"
+            autocomplete="organization-title"
+            pattern="^[A-Za-z\s-]{7,}$"
+            placeholder="At least 7 letters, spaces or hyphens"
+            />
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                name="email"
+                required
+                title="Your email address"
+                autocomplete="email"
+                placeholder="example@example.com"
+            />       
+            <label for="phone-num">Mobile Phone:</label>
+            <input type="tel" id="phone-num" name="mobile" required title="Your mobile phone number"
+            autocomplete="tel" />
+            <label>Business/Organization Name:</label>
+            <input type="text" name="businessName" required title="Your business or organization name" autocomplete="organization" />
+            
+
+            <fieldset>
+            <legend>Membership Level</legend>
+            <label><input type="radio" name="membershipLevel" value="NP Membership" checked /> NP Membership (No fee)</label><br />
+            <label><input type="radio" name="membershipLevel" value="Bronze Membership" /> Bronze Membership</label><br />
+            <label><input type="radio" name="membershipLevel" value="Silver Membership" /> Silver Membership</label><br />
+            <label><input type="radio" name="membershipLevel" value="Gold Membership" /> Gold Membership</label>
+            </fieldset>
+
+            <label>
+            Organization Description:
+            <textarea name="orgDescription" title="Describe your organization"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp" />
+
+            <input type="submit" value="Join Now"/>
+            </form>
+        </div>
+
+        <section class="membership-cards" aria-label="Membership level information">
+            <div class="card" tabindex="0" data-modal="modal-np">
+                <h3>NP Membership</h3>
+                <a href="#" class="more-info" data-modal="modal-np" aria-haspopup="dialog">More Info</a>
+                <dialog id="modal-np">
+                    <h2>NP Membership</h2>
+                    <p>This membership level is free and designed for non-profit organizations.</p>
+                    <button class="close-button">Close</button>
+                </dialog>
+            </div>
+            <div class="card" tabindex="0" data-modal="modal-bronze">
+                <h3>Bronze Membership</h3>
+                <a href="#" class="more-info" data-modal="modal-bronze" aria-haspopup="dialog">More Info</a>
+                <dialog id="modal-bronze">
+                    <h2>Bronze Membership</h2>
+                    <p>Perfect for small businesses looking to expand their local presence.</p>
+                    <button class="close-button">Close</button>
+                </dialog>
+            </div>
+            <div class="card" tabindex="0" data-modal="modal-silver">
+                <h3>Silver Membership</h3>
+                <a href="#" class="more-info" data-modal="modal-silver" aria-haspopup="dialog">More Info</a>
+                <dialog id="modal-silver">
+                    <h2>Silver Membership</h2>
+                    <p>Includes additional marketing support and featured listings.</p>
+                    <button class="close-button">Close</button>
+                </dialog>
+            </div>
+            <div class="card" tabindex="0" data-modal="modal-gold">
+                <h3>Gold Membership</h3>
+                <a href="#" class="more-info" data-modal="modal-gold" aria-haspopup="dialog">More Info</a>
+                <dialog id="modal-gold">
+                    <h2>Gold Membership</h2>
+                    <p>Our premium package with exclusive networking events and ads.</p>
+                    <button class="close-button">Close</button>
+                </dialog>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+      <div id="chamber-info">
+        <p>Trujillo Chamber of commerce</p>
+        <p>Mz C 15 Lt 46, Manuel Arevalo III Etapa</p>
+        <p>La Esperanza, Trujillo</p>
+        <p>trujillocc.info@gmail.com</p>
+        <p>+51 970 992 379</p>
+      </div>
+      <div id="icons">
+        <img src="images/youtube-icon.png" alt="Youtube logo" />
+        <img src="images/x-icon.png" alt="X logo" />
+        <img src="images/linkedin-icon.png" alt="LinkdIn logo" />
+      </div>
+      <div id="class-info">
+        <p>WDD231 Class Project</p>
+        <p>Eduardo Calle</p>
+        <p><span id="current-year"></span> Trujillo chamber of Commerce</p>
+        <span id="last-modified"></span>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

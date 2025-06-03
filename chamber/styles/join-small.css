@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Montserrat', serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #F4E3C1;
+
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: #333609;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+#page-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+#page-info img{
+    display: flex;
+    width: 20%;
+    height: 30%;
+    border-radius: 20px;
+}
+
+
+#navigation-button{
+    display: flex;
+    position: relative;
+    align-content: end;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #E1B12C, #C99B2D);
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#navigation-button::before{
+    content: "☰";
+    position: relative;
+}
+
+#navigation-button.open::before{
+    content: "X";
+}
+
+.navigator{
+    display: none;
+}
+
+.navigator.open{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+.navigator ul{
+    padding: 0%;
+}
+
+.navigator  a{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    color: #261909;
+    text-decoration: none;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+footer{
+    margin: 0;
+    padding: 1rem;
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #405d6eab;
+}
+
+#chamber-info p{
+    padding: 0%;
+    margin: 0.5rem;
+}
+
+#icons{
+    display: flex;
+}
+
+#icons img{
+    max-width: 100px;
+    max-height: 100PX;
+    clip-path: inset(10%);
+}
+
+#class-info p{
+    padding: 0%;
+    margin: 0.5rem;
+}
