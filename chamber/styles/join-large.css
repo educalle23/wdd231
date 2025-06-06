@@ -3,7 +3,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 4rem 1fr;
-        position: relative;
     }
 
     .form{
@@ -16,11 +15,11 @@
         margin: 0.2rem;
     }
     .membership-cards{
-        grid-area: 2/2/2/2;
+        grid-area: 2/2/3/3;
         width: 100%;
-        /* display: flex; */
-        /* align-items: center; */
-
+    }
+    footer{
+        display: flex;         
     }
     
 }

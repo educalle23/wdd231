@@ -130,7 +130,7 @@ form{
     flex-direction: column;
     padding: 0.1rem 0rem 1.5rem 0rem;
     color: #333609;
-    width: 80%;
+    width: 70%;
 }
 legend{
     color: #333609;
@@ -225,7 +225,7 @@ footer{
     padding: 1rem;
     max-width: 100%;
     overflow: hidden;
-    display: block;
+    /* display: block; */
     align-items: center;
     justify-content: space-evenly;
     background-color: #405d6eab;
