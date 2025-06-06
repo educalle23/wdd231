@@ -32,3 +32,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     });
+
+
+
+const button = document.getElementById("navigation-button");
+const menu = document.querySelector(".navigator");
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    button.classList.toggle('open');
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const timestampField = document.getElementById('timestamp');
+    
+    const now = new Date();
+    const timestamp = now.toLocaleString('en-US', {
+        month: '2-digit',
+        day: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true 
+    });
+    
+    timestampField.value = timestamp;
+});

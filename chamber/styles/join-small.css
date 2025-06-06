@@ -103,8 +103,122 @@ main{
     align-items: center;
     justify-content: center;
 }
+main> h1{
+    display: flex;
+    padding: 1rem 0 0rem 2rem;
+    margin: 0;
+}
 
+main h2{
+    color: #333609;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2rem;
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem 0 2rem 2rem;
+    align-items: start;
+}
+
+.contact-info label{
+    display: flex;
+    flex-direction: column;
+    padding: 0.1rem 0rem 1.5rem 0rem;
+    color: #333609;
+    width: 80%;
+}
+legend{
+    color: #333609;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    padding: 0rem;
+    border: 0px;
+}
+fieldset label{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#submit{
+    display: flex;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #a56551, #69855f, #615245);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease infinite;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.membership-cards{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2rem; */
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #c99a2d94;
+    color: black;
+    border-radius: 20px 0;
+    animation: slideInBounce 1.2s ease-out;
+}
+
+.card h3{
+    padding-top: 1rem;
+    margin: 0 0 0.2rem 0;
+}
+.card a{
+    text-decoration: none;
+    color: #333609;
+    border: 0;
+    background-color: #C99B2D;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+@keyframes slideInBounce {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(20px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 footer{
     margin: 0;

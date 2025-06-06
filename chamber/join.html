@@ -45,121 +45,199 @@
   </head>
   <body>
     <header>
-        <div id="page-info">
-            <img src="images/logo.jpg" alt="" class="chamber-logo" />
-            <h1>Trujillo Chamber of Commerce</h1>
-            <button id="navigation-button"></button>
-        </div>
-        <nav class="navigator">
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="">Discover</a>
-            <a href="">Join</a>
-        </nav>
+      <div id="page-info">
+        <img src="images/logo.jpg" alt="" class="chamber-logo" />
+        <h1>Trujillo Chamber of Commerce</h1>
+        <button id="navigation-button"></button>
+      </div>
+      <nav class="navigator">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="">Discover</a>
+        <a href="">Join</a>
+      </nav>
     </header>
     <main>
-        <h1>JOIN</h1>
-        <div class="form">
-            <form method="get" action="thanks.html">
-            <label for="first-name">First Name:</label>
-            <input
-            type="text"
-            id="first-name"
-            name="first-name"
-            required
-            autocomplete="given-name"
-            />
-            <label for="last-name">Last Name:</label>
-            <input
-            type="text"
-            id="last-name"
-            name="last-name"
-            required
-            autocomplete="family-name"
-            />
-            <label for="organanizational-t">Organizational Title:</label>
-            <input
-            type="text"
-            name="organanizational-t"
-            id="organanizational-t"
-            autocomplete="organization-title"
-            pattern="^[A-Za-z\s-]{7,}$"
-            placeholder="At least 7 letters, spaces or hyphens"
-            />
-            <label for="email">Email:</label>
-            <input
+      <h1>JOIN</h1>
+      <h2>Member aplication form</h2>
+      <div class="form">
+        <form method="get" action="thanks.html">
+          <div class="contact-info">
+            <label for="first-name"
+              >First Name:
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                autocomplete="given-name"
+            /></label>
+            <label for="last-name"
+              >Last Name:
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                required
+                autocomplete="family-name"
+            /></label>
+            <label for="organanizational-t"
+              >Organizational Title:
+              <input
+                type="text"
+                name="organanizational-t"
+                id="organanizational-t"
+                autocomplete="organization-title"
+                pattern="^[A-Za-z\s-]{7,}$"
+                placeholder="At least 7 letters, spaces or hyphens"
+            /></label>
+            <label for="email"
+              >Email:
+              <input
                 type="email"
                 name="email"
                 required
                 title="Your email address"
                 autocomplete="email"
                 placeholder="example@example.com"
-            />       
-            <label for="phone-num">Mobile Phone:</label>
-            <input type="tel" id="phone-num" name="mobile" required title="Your mobile phone number"
-            autocomplete="tel" />
-            <label>Business/Organization Name:</label>
-            <input type="text" name="businessName" required title="Your business or organization name" autocomplete="organization" />
-            
-
-            <fieldset>
-            <legend>Membership Level</legend>
-            <label><input type="radio" name="membershipLevel" value="NP Membership" checked /> NP Membership (No fee)</label><br />
-            <label><input type="radio" name="membershipLevel" value="Bronze Membership" /> Bronze Membership</label><br />
-            <label><input type="radio" name="membershipLevel" value="Silver Membership" /> Silver Membership</label><br />
-            <label><input type="radio" name="membershipLevel" value="Gold Membership" /> Gold Membership</label>
-            </fieldset>
-
+            /></label>
+            <label for="phone-num"
+              >Mobile Phone:
+              <input
+                type="tel"
+                id="phone-num"
+                name="mobile"
+                required
+                title="Your mobile phone number"
+                autocomplete="tel"
+            /></label>
+            <label
+              >Business/Organization Name:
+              <input
+                type="text"
+                name="businessName"
+                required
+                title="Your business or organization name"
+                autocomplete="organization"
+            /></label>
             <label>
-            Organization Description:
-            <textarea name="orgDescription" title="Describe your organization"></textarea>
+              Organization Description:
+              <textarea
+                name="orgDescription"
+                title="Describe your organization"
+              ></textarea>
             </label>
+          </div>
 
-            <input type="hidden" id="timestamp" name="timestamp" />
+          <fieldset>
+            <legend>Membership Level</legend>
+            <label
+              ><input
+                type="radio"
+                name="membershipLevel"
+                value="NP Membership"
+                checked
+              />
+              NP Membership (No fee)</label
+            ><br />
+            <label
+              ><input
+                type="radio"
+                name="membershipLevel"
+                value="Bronze Membership"
+              />
+              Bronze Membership</label
+            ><br />
+            <label
+              ><input
+                type="radio"
+                name="membershipLevel"
+                value="Silver Membership"
+              />
+              Silver Membership</label
+            ><br />
+            <label
+              ><input
+                type="radio"
+                name="membershipLevel"
+                value="Gold Membership"
+              />
+              Gold Membership</label
+            >
+          </fieldset>
 
-            <input type="submit" value="Join Now"/>
-            </form>
+          <input type="hidden" id="timestamp" name="timestamp" />
+
+          <input id="submit" type="submit" value="Join Now" />
+        </form>
+      </div>
+
+      <section
+        class="membership-cards"
+        aria-label="Membership level information"
+      >
+        <h2>MEMBERSHIP LEVELS</h2>
+        <div class="card" tabindex="0" data-modal="modal-np">
+          <h3>NP Membership</h3>
+          <a
+            href="#"
+            class="more-info"
+            data-modal="modal-np"
+            aria-haspopup="dialog"
+            >More Info</a
+          >
+          <dialog id="modal-np">
+            <h2>NP Membership</h2>
+            <p>A free membership designed for non-profit organizations, providing business networking, access to informational resources, and support in promoting community initiatives.</p>
+            <button class="close-button">Close</button>
+          </dialog>
         </div>
-
-        <section class="membership-cards" aria-label="Membership level information">
-            <div class="card" tabindex="0" data-modal="modal-np">
-                <h3>NP Membership</h3>
-                <a href="#" class="more-info" data-modal="modal-np" aria-haspopup="dialog">More Info</a>
-                <dialog id="modal-np">
-                    <h2>NP Membership</h2>
-                    <p>This membership level is free and designed for non-profit organizations.</p>
-                    <button class="close-button">Close</button>
-                </dialog>
-            </div>
-            <div class="card" tabindex="0" data-modal="modal-bronze">
-                <h3>Bronze Membership</h3>
-                <a href="#" class="more-info" data-modal="modal-bronze" aria-haspopup="dialog">More Info</a>
-                <dialog id="modal-bronze">
-                    <h2>Bronze Membership</h2>
-                    <p>Perfect for small businesses looking to expand their local presence.</p>
-                    <button class="close-button">Close</button>
-                </dialog>
-            </div>
-            <div class="card" tabindex="0" data-modal="modal-silver">
-                <h3>Silver Membership</h3>
-                <a href="#" class="more-info" data-modal="modal-silver" aria-haspopup="dialog">More Info</a>
-                <dialog id="modal-silver">
-                    <h2>Silver Membership</h2>
-                    <p>Includes additional marketing support and featured listings.</p>
-                    <button class="close-button">Close</button>
-                </dialog>
-            </div>
-            <div class="card" tabindex="0" data-modal="modal-gold">
-                <h3>Gold Membership</h3>
-                <a href="#" class="more-info" data-modal="modal-gold" aria-haspopup="dialog">More Info</a>
-                <dialog id="modal-gold">
-                    <h2>Gold Membership</h2>
-                    <p>Our premium package with exclusive networking events and ads.</p>
-                    <button class="close-button">Close</button>
-                </dialog>
-            </div>
-        </section>
-
+        <div class="card" tabindex="0" data-modal="modal-bronze">
+          <h3>Bronze Membership</h3>
+          <a
+            href="#"
+            class="more-info"
+            data-modal="modal-bronze"
+            aria-haspopup="dialog"
+            >More Info</a
+          >
+          <dialog id="modal-bronze">
+            <h2>Bronze Membership</h2>
+            <p>Ideal for small businesses looking to establish themselves locally. Includes access to business directories, marketing guidance, and discounted rates for events.</p>
+            <button class="close-button">Close</button>
+          </dialog>
+        </div>
+        <div class="card" tabindex="0" data-modal="modal-silver">
+          <h3>Silver Membership</h3>
+          <a
+            href="#"
+            class="more-info"
+            data-modal="modal-silver"
+            aria-haspopup="dialog"
+            >More Info</a
+          >
+          <dialog id="modal-silver">
+            <h2>Silver Membership</h2>
+            <p>For businesses seeking greater visibility. Offers featured listings, marketing strategies, exclusive training, and discounts on advertising.</p>
+            <button class="close-button">Close</button>
+          </dialog>
+        </div>
+        <div class="card" tabindex="0" data-modal="modal-gold">
+          <h3>Gold Membership</h3>
+          <a
+            href="#"
+            class="more-info"
+            data-modal="modal-gold"
+            aria-haspopup="dialog"
+            >More Info</a
+          >
+          <dialog id="modal-gold">
+              <h2>Gold Membership</h2>
+                  <p>Our premium option with priority networking, business development consulting, advanced promotional tools, and access to mentorship programs.</p>
+              <button class="close-button">Close</button>
+          </dialog>
+        </div>
+      </section>
     </main>
     <footer>
       <div id="chamber-info">
