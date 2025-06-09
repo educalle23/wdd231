@@ -5,6 +5,17 @@
         grid-template-rows: 4rem 1fr;
     }
 
+    #navigation-button{
+        display: none;
+    }
+
+    .navigator{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+
     .form{
         width: 100%;
         grid-column: 1/2;
