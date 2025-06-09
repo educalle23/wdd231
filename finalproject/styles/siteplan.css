@@ -1,0 +1,70 @@
+body{
+    background-color: #faf8f5;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1, h2{
+    color:  #6b8e5a;
+    font-family: "Playfair Display", serif;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    border-bottom: solid 2px #a3f3b7 ;
+    padding: 1rem;
+}
+
+.color p{
+    padding: 1rem;
+    border-radius: 20px;
+}
+#base{
+    background-color: #6b8e5a;
+    
+}
+#secondary{
+    background-color: #a3f3b7;
+}
+#third{
+    background-color: #faf8f5;
+}
+
+.typo h3:first-of-type{
+    font-family: "Playfair Display", serif;
+}
+
+.typo p:first-of-type{
+    font-family: "Playfair Display", serif;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 650px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
