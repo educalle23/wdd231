@@ -1,4 +1,16 @@
 @media screen and (min-width: 641px) {
+    #nav-button{
+        display: none;
+    }
+    .navigator{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 0 0.5rem 0;        
+    }
+    .navigator a{
+        color: #261909;
+    }
     .welcome{
         padding: 2rem;
     }

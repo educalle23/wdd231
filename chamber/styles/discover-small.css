@@ -19,13 +19,13 @@ header{
     align-items: center;
     justify-content: center;
 }
-
-header h1{
-    color: #C99B2D;
+header h1 {
+    color: #333609;
     padding-bottom: 0%;
     margin-bottom: 0;
     font-family: 'Playfair Display', serif;
 }
+
 
 #page-info{
     display: flex;
@@ -89,7 +89,7 @@ header h1{
     font-size: 1.3rem;
     padding: 0.3rem;
     cursor: pointer;
-    color: #B07C3E;
+    color: #703f04;
     font-weight: bold;
     text-decoration: none;
 }
