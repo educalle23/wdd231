@@ -12,7 +12,6 @@ body{
 
 header{
     background-color: #F4E3C1;
-
     margin: 0%;
     padding: 0%;
     width: 100%;
@@ -25,7 +24,9 @@ header h1{
     color: #C99B2D;
     padding-bottom: 0%;
     margin-bottom: 0;
-    font-family: 'Playfair Display', serif;}
+    font-family: 'Playfair Display', serif;
+}
+
 #page-info{
     display: flex;
     justify-content: space-evenly;
@@ -96,40 +97,43 @@ header h1{
 main{
     align-items: center;
     justify-content: center;
-}
-#filters{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-#btnGrid, #btnList{
-    font-size: 1.5rem;
-    background: linear-gradient(to right, #E1B12C, #C99B2D);
-    color: white;
-    padding: 15px 15px;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 0.5rem;
-}
-.grid-view .item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    flex-direction: column;
-    box-shadow: 2px 2px 10px 1px #B07C3E;
-    margin-bottom: 0.5rem;
-}
-.item p{
-    display: flex;
-    margin: 0.2rem;
-}
 
-.item img{
-    max-width: 50%;
-    height: auto;
+}
+.welcome{
+    display: flex;
+    justify-content: end;
+    color: #765733;
+    font-weight: bold;
+    padding: 1.5rem 0 0.5rem 0;
+}
+.card{
+    background-color: #F4E3C1;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photo"
+    "description"
+    "adress";
+}
+.card h2{
+    justify-content: center;
+    align-items: center;
+    grid-area: name;
+}
+.card img{
+    display: grid;
+    grid-area: photo;
+}
+.card #desc{
+    grid-area: description;
+    margin-top: 0.2rem;
+}
+.card #adress{
+    grid-area: adress;
+    margin-top: 0.2rem;
 }
 
 footer{

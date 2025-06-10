@@ -1,4 +1,4 @@
-[
+export const items = [
   {
     "name": "Historic Center of Trujillo",
     "image": "historic-center.webp",
