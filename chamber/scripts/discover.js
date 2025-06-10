@@ -1,3 +1,5 @@
+import {items} from '../data/items.js'
+
 const button = document.getElementById("nav-button");
 const menu = document.querySelector(".navigator");
 
@@ -49,21 +51,15 @@ if (!lastVisit) {
 
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.querySelector('.items');
-
-    async function fetchPlaces() {
-        const response = await fetch('.../data/items.json')
-        return await response.json();
-    }
-
+    
     async function renderCards() {
-        const data = await fetchPlaces();
         container.innerHTML = "";
-        data.forEach(p => {
+        items.forEach(p => {
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
             <h2>${p.name}</h2>
-            <img src="images/${p.image}" alt="${p.name}" loading="lazy">
+            <img src="images/${p.image}" alt="${p.name}">
             <p id="desc">${p.description}</p>
             <p id="adress">${p.address}</p>
             <button>Learn More!</button>
