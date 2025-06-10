@@ -1,5 +1,3 @@
-import {items} from '../data/items.js'
-
 const button = document.getElementById("nav-button");
 const menu = document.querySelector(".navigator");
 
@@ -51,10 +49,16 @@ if (!lastVisit) {
 
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.querySelector('.items');
-    
+
+    async function fetchPlaces() {
+        const response = await fetch('/chamber/data/items.json')
+        return await response.json();
+    }
+
     async function renderCards() {
+        const data = await fetchPlaces();
         container.innerHTML = "";
-        items.forEach(p => {
+        data.forEach(p => {
             const card = document.createElement('div');
             card.classList.add('card');
             card.innerHTML = `
