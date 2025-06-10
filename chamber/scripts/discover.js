@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const container = document.querySelector('.items');
 
     async function fetchPlaces() {
-        const response = await fetch('/chamber/data/items.json')
+        const response = await fetch('.../data/items.json')
         return await response.json();
     }
 
