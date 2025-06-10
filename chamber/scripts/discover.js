@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             card.classList.add('card');
             card.innerHTML = `
             <h2>${p.name}</h2>
-            <img src="images/${p.image}" alt="${p.name} loading="lazy">
+            <img src="images/${p.image}" alt="${p.name}" loading="lazy">
             <p id="desc">${p.description}</p>
             <p id="adress">${p.address}</p>
             <button>Learn More!</button>
