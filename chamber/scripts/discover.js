@@ -75,14 +75,3 @@ document.addEventListener("DOMContentLoaded", async () => {
 messageContainer.textContent = message;
 localStorage.setItem('lastVisit', now.toString());
 
-
-
-
-console.log('Tiempo actual:', now);
-console.log('Última visita guardada:', lastVisit);
-console.log('¿Es primera visita?', !lastVisit);
-
-// ... resto del código ...
-
-localStorage.setItem('lastVisit', now.toString());
-console.log('Guardé para la próxima:', now);
