@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const card = document.createElement("div");
             card.classList.add("item");
             card.innerHTML = `
-                <img src="images/${item.image}" alt="${item.name}">
+                <img src="images/${item.image}" alt="${item.name} loading="lazy">
 
                 <p>${item.address}</p>
                 <p>${item.phone}</p>
