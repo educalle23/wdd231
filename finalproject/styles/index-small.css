@@ -111,6 +111,9 @@ main section:not(:first-child){
     font-family: var(--font-normal);
 }
 
+main h2{
+    font-family: var(--font-heading);
+}
 
 .hero{
     position: relative;
@@ -175,10 +178,30 @@ form label{
     /* margin-top: 1rem; */
 }
 
+/* THANKS */
 
+.display-thanks{
+    background-color: #2b524798;
+    font-family: var(--font-normal);
+    color: #faf8f5;
+    width: 90%;
+    padding: 1rem 5%; 
+    border-radius: 1rem;
+    margin: 0.2rem 0;
+}
 
-
-
+#name{
+    color: #1c3e28;
+}
+#back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+    font-weight: 900;
+    color: #263e2c;
+}
 
 /* FOOTER */
 

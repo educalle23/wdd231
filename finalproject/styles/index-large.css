@@ -1,0 +1,95 @@
+@media screen and (min-width: 640px) {
+    #ham-button{
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+        "hero hero"
+        "services services"
+        "about-us about-us"
+        "news contact"
+        "maps maps";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .navigator{
+        display: flex;
+        padding: 1rem 0;
+    }
+    .nav-bar{
+        display: flex;
+        gap: 5rem;
+    }
+    .hero{
+        height: 60vh;
+        grid-area: hero;
+    }
+    .hero-content{
+        width: 40%;
+    }
+    
+
+    .services{
+        grid-area: services;
+    }
+    .services-container{
+        display: flex;
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+    .services h2{
+    text-align: center;
+    }
+
+    .about-us{
+        grid-area: about-us;
+        display: grid;
+        grid-template-areas: 
+        "images title"
+        "images p";
+        background-color: var(--color-accent);
+    }
+    .about-us img{
+        grid-area: images;
+        max-width: 8rem;
+        margin: 2rem;
+    }
+    .about-us h2{
+        grid-area: title;
+    }
+    .about-us p{
+        grid-area: p;
+    }
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2rem;
+        grid-area: news;
+        
+    }
+
+    .container-info{
+        display: grid;
+        grid-area: contact;
+    }
+
+    .maps{
+        grid-area: maps; 
+        max-height: 20rem;
+    } 
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2.5%;
+        gap: 1%; 
+        width:95% 
+    }
+    footer .services{
+        border: 0;
+    }
+}
