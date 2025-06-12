@@ -1,0 +1,122 @@
+[
+    {
+    "id": 1,
+    "name": "Deep Tissue Massage",
+    "category": "massage",
+    "price": 80,
+    "duration": 60,
+    "intensity": "high"
+    },
+    {
+        "id": 2,
+        "name": "Swedish Massage",
+        "category": "massage",
+        "price": 65,
+        "duration": 45,
+        "intensity": "medium"
+    },
+    {
+        "id": 3,
+        "name": "Hot Stone Massage",
+        "category": "massage",
+        "price": 95,
+        "duration": 75,
+        "intensity": "low"
+    },
+    {
+        "id": 4,
+        "name": "Physical Rehabilitation",
+        "category": "therapy",
+        "price": 90,
+        "duration": 45,
+        "intensity": "medium"
+    },
+    {
+        "id": 5,
+        "name": "Joint Mobilization",
+        "category": "therapy",
+        "price": 75,
+        "duration": 30,
+        "intensity": "medium"
+    },
+    {
+        "id": 6,
+        "name": "Posture Correction",
+        "category": "therapy",
+        "price": 80,
+        "duration": 40,
+        "intensity": "medium"
+    },
+    {
+        "id": 7,
+        "name": "Foot Reflexology",
+        "category": "reflexology",
+        "price": 60,
+        "duration": 45,
+        "intensity": "low"
+    },
+    {
+        "id": 8,
+        "name": "Hand Reflexology",
+        "category": "reflexology",
+        "price": 45,
+        "duration": 30,
+        "intensity": "low"
+    },
+    {
+        "id": 9,
+        "name": "Full Body Reflexology",
+        "category": "reflexology",
+        "price": 85,
+        "duration": 60,
+        "intensity": "medium"
+    },
+    {
+        "id": 10,
+        "name": "Manual Lymphatic Drainage",
+        "category": "lymphatic",
+        "price": 95,
+        "duration": 50,
+        "intensity": "low"
+    },
+    {
+        "id": 11,
+        "name": "Post-Surgery Lymphatic Drainage",
+        "category": "lymphatic",
+        "price": 110,
+        "duration": 60,
+        "intensity": "low"
+    },
+    {
+        "id": 12,
+        "name": "Detox Lymphatic Massage",
+        "category": "lymphatic",
+        "price": 85,
+        "duration": 45,
+        "intensity": "medium"
+    },
+    {
+        "id": 13,
+        "name": "Anti-Cellulite Massage",
+        "category": "slimming",
+        "price": 75,
+        "duration": 45,
+        "intensity": "high"
+    },
+    {
+        "id": 14,
+        "name": "Body Contouring Massage",
+        "category": "slimming",
+        "price": 90,
+        "duration": 60,
+        "intensity": "high"
+    },
+    {
+        "id": 15,
+        "name": "Vacuum Therapy Massage",
+        "category": "slimming",
+        "price": 80,
+        "duration": 50,
+        "intensity": "medium"
+    }
+]

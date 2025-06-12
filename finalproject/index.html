@@ -40,47 +40,56 @@
     </header>
     <main>
         <section class="hero">
-            <img src="" alt="Relaxing massages">
-            <p>Relax. Refresh. Rejuvenate.</p>
-            <button>Book an Appointment</button>
+            <div class="hero-content">
+                <!-- <img src="" alt="Relaxing massages"> -->
+                <p>Relax. Refresh. Rejuvenate.</p>
+                <button class="book-but">Book an Appointment</button>
+            </div>
         </section>
         <section class="services">
-            <h2>Our Sevices</h2>
-            <div class="therapy">
+            <h2>Our Services</h2>
+            <div class="services-container">
+
+            </div>
+            <div class="services-card">
                 <h3>Physical and alternative therapy</h3>
                 <p>Combining traditional physical therapy with alternative healing methods to restore mobility, reduce chronic pain, and improve overall function through personalized treatment plans.</p>
-                <a href="">See More</a>
+                <a href="services.html">See More</a>
             </div>
-            <div class="massages">
-                <h3>Realxing Massages</h3>
+            <div class="services-card">
+                <h3>Relaxing Massages</h3>
                 <p>Professional therapeutic massage techniques designed to release muscle tension, enhance blood circulation, reduce stress, and promote complete body and mind relaxation.</p>
-                <a href="">See More</a>
+                <a href="services.html">See More</a>
             </div>
-            <div class="reflexology">
+            <div class="services-card">
                 <h3>Foot reflexology</h3>
                 <p>Ancient healing practice applying targeted pressure to specific foot reflex points that correspond to different organs and body systems, promoting natural healing and balance.</p>
-                <a href="">See More</a>
+                <a href="services.html">See More</a>
             </div>
         </section>
-        <!-- <section class="about-us">
-
-        </section> -->
+        <section class="about-us">
+            <h2>About Us</h2>
+            <img src="images/logo.jpeg" alt="">
+            <p>Marisol Urbina is the founder of <strong>Manos de Seda</strong> and a passionate advocate for wellness. With over a year of experience as a physical therapy assistant, she has worked in various massage centers and corporate campaigns. Marisol combines traditional techniques with alternative therapies, offering personalized care focused on relaxation, recovery, and overall well-being.</p>
+        </section>
         <section class="schedule">
             <h2>Contact Us</h2>
+            <p>Join us in our Newsletter!</p>
             <form method="get" action="thanks.html">
                 <label for="complete-name">Name:
-                    <input type="text" id="complete-name" autocomplete="name" required>
+                    <input type="text" id="complete-name" name="complete-name" autocomplete="name" required>
                 </label>
                 <label for="email">Email:
-                    <input type="email" id="email" autocomplete="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </label>
+                <label for="phone">Phone:
+                    <input type="tel" id="phone" name="phone" required placeholder="Ejm:+51 995 999 999">
                 </label>
                 <label for="message">Message:
-                    <input type="text" id="message">
+                    <textarea name="message" title="yara"></textarea> 
                 </label>
-                <input id="submit" type="submit" value="Re-connect you">
-
+                <input id="submit" type="submit" value="Re-connect you"/>
             </form>
-
         </section>
 
     </main>
@@ -104,7 +113,7 @@
         </div>
         <div class="booking">
             <h2>Book-you to reconnect you</h2>
-            <button>Book Appointment</button>
+            <button class="book-but">Book Appointment</button>
         </div>
 
     </footer>
