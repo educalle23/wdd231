@@ -140,7 +140,7 @@ footer img{
     font-family: var(--font-heading);
 }
 
-.services{
+footer .services{
     margin: 1rem 0;
     border-top: 1px solid var(--color-secondary);
     border-bottom:1px solid var(--color-secondary);
