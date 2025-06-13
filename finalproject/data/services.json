@@ -5,7 +5,8 @@
     "category": "massage",
     "price": 80,
     "duration": 60,
-    "intensity": "high"
+    "intensity": "high",
+    "img" : "anti-cellulite-massage.webp"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "category": "massage",
         "price": 65,
         "duration": 45,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "swedish-massage.webp"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "category": "massage",
         "price": 95,
         "duration": 75,
-        "intensity": "low"
+        "intensity": "low",
+        "img" : "hot-stone.png"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "category": "therapy",
         "price": 90,
         "duration": 45,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "physical-rehabilitation.webp"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "category": "therapy",
         "price": 75,
         "duration": 30,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "joint-mobilization.webp"
     },
     {
         "id": 6,
@@ -45,7 +50,8 @@
         "category": "therapy",
         "price": 80,
         "duration": 40,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "posture-correction.webp"
     },
     {
         "id": 7,
@@ -53,7 +59,8 @@
         "category": "reflexology",
         "price": 60,
         "duration": 45,
-        "intensity": "low"
+        "intensity": "low",
+        "img" : "foot-reflexology.webp"
     },
     {
         "id": 8,
@@ -61,7 +68,8 @@
         "category": "reflexology",
         "price": 45,
         "duration": 30,
-        "intensity": "low"
+        "intensity": "low",
+        "img" : "hand-reflexology.webp"
     },
     {
         "id": 9,
@@ -69,7 +77,8 @@
         "category": "reflexology",
         "price": 85,
         "duration": 60,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "full-body-reflexology.webp"
     },
     {
         "id": 10,
@@ -77,7 +86,8 @@
         "category": "lymphatic",
         "price": 95,
         "duration": 50,
-        "intensity": "low"
+        "intensity": "low",
+        "img" : "manual-lymphatic-drainage.jpeg"
     },
     {
         "id": 11,
@@ -85,7 +95,8 @@
         "category": "lymphatic",
         "price": 110,
         "duration": 60,
-        "intensity": "low"
+        "intensity": "low",
+        "img" : "post-lymphatic-massage.webp"
     },
     {
         "id": 12,
@@ -93,7 +104,8 @@
         "category": "lymphatic",
         "price": 85,
         "duration": 45,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "detox-lymphatic.webp"
     },
     {
         "id": 13,
@@ -101,7 +113,8 @@
         "category": "slimming",
         "price": 75,
         "duration": 45,
-        "intensity": "high"
+        "intensity": "high",
+        "img" : "anti-cellulite-massage.webp"
     },
     {
         "id": 14,
@@ -109,7 +122,8 @@
         "category": "slimming",
         "price": 90,
         "duration": 60,
-        "intensity": "high"
+        "intensity": "high",
+        "img" : "body-contouring.webp"
     },
     {
         "id": 15,
@@ -117,6 +131,7 @@
         "category": "slimming",
         "price": 80,
         "duration": 50,
-        "intensity": "medium"
+        "intensity": "medium",
+        "img" : "vacum.webp"
     }
 ]

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (bookBtns.length > 0) {
         bookBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                window.location.href = 'services.html';
+                window.location.href = 'booking.html';
             });
         });
     }

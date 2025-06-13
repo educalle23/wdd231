@@ -153,12 +153,32 @@ footer img{
     margin-bottom: 1rem;
 }
 
-.booking button{
+
+.book-but{
     padding: 0.5rem 0;
     margin-top: 0.5rem;
     color: var(--color-secondary);
     background-color: #181e15;
     border: none;
     border-radius: 1rem;
+    background: linear-gradient(45deg, #8fc067, #31743a, #35c240,#3a7f81);
+    font-weight: 600;
+    cursor: pointer;
+    animation: gradient-shift 3s ease infinite;
+    transition: transform 0.3s ease;
+    background-size: 400% 400%;
+    font-family: var(--font-heading);
 }
+
+.book-but:hover {
+    transform: scale(1.1);
+    animation-duration: 1.5s;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 

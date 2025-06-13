@@ -104,6 +104,46 @@ header{
     font-weight: 800;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 1rem 2.5%;
+}
+
+.title{
+    font-family: var(--font-heading);
+    margin: 0 0 1rem ;
+}
+
+.services-container{
+    text-align: center;
+}
+.services-container h3{
+    text-align: left;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+}
+
+.card{
+    width: 90%;
+    padding: 1rem 5%;
+    margin: 0.5rem 0;
+    background: linear-gradient(45deg, #2b8843, #74c432a4);
+    border-radius: 2rem;
+}
+.card h4, p{
+    margin: 6px 0;
+}
+.card h4{
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+
+}
+
+
+/* FOOTER */
+
 footer{
     display: block;
     font-family: var(--font-normal);
@@ -153,12 +193,32 @@ footer img{
     margin-bottom: 1rem;
 }
 
-.booking button{
+
+.book-but{
     padding: 0.5rem 0;
     margin-top: 0.5rem;
     color: var(--color-secondary);
     background-color: #181e15;
     border: none;
     border-radius: 1rem;
+    background: linear-gradient(45deg, #8fc067, #31743a, #35c240,#3a7f81);
+    font-weight: 600;
+    cursor: pointer;
+    animation: gradient-shift 3s ease infinite;
+    transition: transform 0.3s ease;
+    background-size: 400% 400%;
+    font-family: var(--font-heading);
 }
+
+.book-but:hover {
+    transform: scale(1.1);
+    animation-duration: 1.5s;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 
