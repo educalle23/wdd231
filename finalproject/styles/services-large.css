@@ -18,10 +18,14 @@
         grid-template-rows: auto auto;
         gap: 1rem;
     }
+    .nav-bar img{
+        max-width: 9rem;
+    }
     .title{
         text-align: center;
         margin-bottom: 2rem;
     }
+    
     .massage { 
         grid-column: 1 / 4; 
         grid-row: 1; 
@@ -31,18 +35,19 @@
         height: 12rem;
         display: grid;
         grid-template-areas:
-        "img title"
         "img p";
         justify-content: center;
         align-items: center;
+        gap: 5%;
     }
     .massage> .card img,
     .therapy>.card img{
         grid-area: img;
+        /* padding:2rem; */
     }
     .massage> .card h4,
     .therapy>.card h4{
-        grid-area: title;
+        /* grid-area: title; */
         margin: 16px 0;
 
     }
@@ -52,10 +57,12 @@
     }
     .card{
         overflow: hidden;
+        height: 12rem;
     }
     .card img{
         max-width: 15rem;
-        max-height: 20vh;
+        max-height: 8rem;
+        border-radius: 1rem 0;
     }
     .therapy { 
         grid-column: 4 / 7; 

@@ -21,6 +21,12 @@
     .nav-bar{
         display: flex;
         gap: 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-bar img{
+        max-width: 9rem;
     }
     .hero{
         height: 60vh;
@@ -28,6 +34,7 @@
     }
     .hero-content{
         width: 40%;
+        font-size: larger;
     }
     
 

@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', async () =>{
     items.forEach(item => {
         const card = document.createElement('div');
         card.className = 'card';
-        card.innerHTML = `
-        <h4>${item.name}</h4>
+        card.innerHTML = `        
         <img src="images/${item.img}">
         <div class="info">
+            <h4>${item.name}</h4>
             <p><strong>Price:</strong> S/.${item.price}</p>
             <p><strong>Duration:</strong> ${item.duration} min.</p>
         </div>
