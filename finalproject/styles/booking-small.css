@@ -141,7 +141,43 @@ form label{
 }
 
 
-/* FOOTER */
+dialog{
+    background-color: var(--color-accent);
+    border: 1px solid #181e15;
+    border-radius: 2rem;
+    /* margin: 0 5%; */
+    width: 90%;
+    font-family: var(--font-normal);
+}
+dialog h2{
+    font-family: var(--font-heading);
+}
+
+.modal-buttons{
+    display: flex;
+    gap: 1rem;
+}
+dialog button{
+    border: 0;
+    padding: 4px 0;
+}
+
+#confirmBtn{
+    background-color: #2a3c2d;
+    color: #88d793;
+}
+
+#editBtn{
+    background-color:#bdcc6b ;
+    color: #3d3b58;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 
 footer{
     display: block;
