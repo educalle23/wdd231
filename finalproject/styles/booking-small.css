@@ -104,6 +104,45 @@ header{
     font-weight: 800;
 }
 
+
+#booking-form{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    margin-left: 5%;
+    width: 95%;
+    font-weight: 800;
+    font-family: #3d4636;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 95%;
+    margin-left: 5%;
+}
+
+form input:not(#submit){
+    width: 95%;
+    border: var(--color-primary) 1px solid;
+    border-radius: 5px;
+}
+form label{
+    color: #426431;
+    font-size: medium;
+    font-family: var(--font-normal);
+}
+
+
+#extra{
+    width: 95%;
+}
+
+
+/* FOOTER */
+
 footer{
     display: block;
     font-family: var(--font-normal);

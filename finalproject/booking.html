@@ -8,8 +8,8 @@
 
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index-small.css">
-    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="stylesheet" href="styles/booking-small.css">
+    <link rel="stylesheet" href="styles/booking-large.css">
 
     <!-- SCRIPTS -->
     <script src="scripts/booking.js" type="module"></script>
@@ -39,6 +39,59 @@
         </nav>
     </header>
     <main>
+        <section class="form-container">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <div class="inputs-forms">
+                    <label for="f-name">First Name</label>
+                    <input type="text" id="f-name" name="fname" autocomplete="given-name" required>
+                </div>
+                <div class="inputs-forms">
+                    <label for="l-name">Last Name</label>
+                    <input type="text" id="l-name" name="lname" autocomplete="family-name" required>
+                </div>
+                <div class="inputs-forms">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="inputs-forms">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone" autocomplete="tel">
+                </div>
+                <div class="inputs-forms">
+                    <label for="date">Date and Hour</label>
+                    <input type="datetime-local" id="date" name="date" required>
+                </div>
+                <div class="inputs-forms">
+                    <label for="extra">Extra Info</label>
+                    <textarea name="extra" id="extra"></textarea>
+                </div>
+                <button type="submit" class="book-but" id="form-submit">Schedule Appointment</button>              
+            </form>
+        </section>
+        
+        
+        <dialog id="confirmModal" class="modal">
+            <div class="modal-content">
+                <h2>Confirm Information</h2>
+                <div id="confirmationDetails"></div>
+                <div class="modal-buttons">
+                    <button type="button" class="btn btn-secondary" id="editBtn">Edit</button>
+                    <button type="button" class="btn btn-primary" id="confirmBtn">Confirm</button>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="successModal" class="modal success-modal">
+            <div class="modal-content">
+                <div class="success-icon">
+                    <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                </div>
+                <h2>Appointment Successfully Scheduled!</h2>
+                <p>Your information has been registered correctly. You will receive an email confirmation shortly.</p>
+                <button type="button" class="btn" id="closeSuccess">Back to Home</button>
+            </div>
+        </dialog>
 
     </main>
     <footer>
