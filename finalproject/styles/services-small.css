@@ -143,13 +143,16 @@ main{
     background: linear-gradient(45deg, #2b8843, #74c432a4);
     border-radius: 2rem;
 }
+.card img{
+    border-radius: 1rem;
+}
 .card h4, p{
     margin: 6px 0;
 }
 .card h4{
     font-family: var(--font-heading);
     color: var(--color-accent);
-
+    font-size: larger;
 }
 
 
