@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', async () =>{
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `        
-        <img src="images/${item.img} alt="${item.name}" loading="lazy"/>
+        <img src="images/${item.img}" alt="${item.img}" loading="lazy" />
         <div class="info">
             <h4>${item.name}</h4>
             <p><strong>Price:</strong> S/.${item.price}</p>

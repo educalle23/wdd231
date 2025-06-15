@@ -57,7 +57,11 @@
     }
     .card{
         overflow: hidden;
-        height: 12rem;
+        height: 14rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .card img{
         max-width: 15rem;
