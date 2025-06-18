@@ -29,6 +29,11 @@
         max-width: 9rem;
     }
 
+    #booking{
+        color: #25442d;
+        text-decoration: underline;
+    }
+
     .form-container{
         width: 100%;
         max-width: 20rem;

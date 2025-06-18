@@ -28,6 +28,11 @@
     .nav-bar img{
         max-width: 9rem;
     }
+
+    #home{
+        color: #25442d;
+        text-decoration: underline;
+    }
     .hero{
         height: 60vh;
         grid-area: hero;

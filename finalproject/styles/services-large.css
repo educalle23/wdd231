@@ -21,6 +21,11 @@
     .nav-bar img{
         max-width: 9rem;
     }
+
+    #services{
+        color: #25442d;
+        text-decoration: underline;
+    }
     .title{
         text-align: center;
         margin-bottom: 2rem;
